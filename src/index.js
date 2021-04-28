@@ -1,13 +1,10 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const serverless = require("serverless-http");
-const router = express.Router();
-const authToken = require("./services/verifyToken");
 
 require("dotenv/config");
 const app = express();
+const router = express.Router();
 
 //Middlewares
 app.use(cors());
